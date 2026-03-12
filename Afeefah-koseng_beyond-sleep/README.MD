@@ -16,4 +16,4 @@
 Sleep_Disorder จะมีค่าเช่น
 None
 Insomnia
-Sleep_Apnea
+Sleep_Apnea(ภาวะหยุดหายใจขณะหลับ)
