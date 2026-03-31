@@ -47,12 +47,26 @@ The input data is structured into a dictionary format for processing by the AI m
 
 ##  Model & Processing
 
-This project uses a generative AI model to analyze the user's condition and generate recommendations.
+This project uses a generative AI model together with a rule-based scoring system.
 
-The AI evaluates:
-- Recovery condition  
-- Physical readiness  
-- Risk of injury  
+- The AI model generates recommendations based on user input
+- A fallback scoring system ensures the system can still function without API access
+
+The system evaluates:
+- Recovery condition
+- Physical readiness
+- Risk of injury 
+
+##  Model Improvement (Fine-tuning)
+
+The scoring logic was adjusted to improve accuracy.
+
+For example:
+- High muscle soreness significantly reduces the score
+- Low sleep (less than 5 hours) strongly decreases workout readiness
+- High stress reduces the intensity recommendation
+
+These adjustments help the system better reflect real human recovery conditions.
 
 ---
 
@@ -102,6 +116,15 @@ The AI evaluates:
 The AI system can effectively classify workout readiness based on simple health indicators.
 
 ---
+
+## 🚀 Deployment
+
+Currently, the system runs in Jupyter Notebook.
+
+It can be deployed in the future as:
+- A web application
+- A mobile fitness assistant
+- Integration with wearable devices
 
 ##  Future Improvements
 
